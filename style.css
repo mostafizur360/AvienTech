@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif !important;
+}
+body{
+    background-color: #FDFDFE;
+}
+body,html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color:  rgb(0, 149, 218);
+    --p-color:  rgb(44, 74, 107);
+    --tittle-color:rgb(44, 74, 107);
+    --text-color:rgb(73, 73, 73);
+    --bg-color:rgb(255, 255, 255);
+    --mainBg-color:#2F266A;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+section{
+    padding: 50px 0;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+h4{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2.5rem;
+}.tittle{
+    color: var(--tittle-color);
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 100px ;
+
+}
+.button {
+    color: #fff;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    position: relative;
+    z-index: 0
+}
+
+.button:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .4s all ease 0s;
+    z-index: -1;
+    background: #fff
+}
+
+.button:hover:before {
+    transition: .4s all ease 0s;
+    width: 100%
+}
+.button:hover {
+    color: #000
+}
+.buttonX {
+    color: #000000;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 5px 30px;
+    position: relative;
+    z-index: 0
+}
+
+.buttonX:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .4s all ease 0s;
+    z-index: -1;
+    background: var(--mainBg-color)
+}
+
+.buttonX:hover:before {
+    transition: .4s all ease 0s;
+    width: 100%
+}
+.buttonX:hover {
+    color: #ffffff
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*============top_hader============*/
+.top_hader{
+    background-color: var(--mainBg-color);
+    
+}
+.social ul li {
+
+    margin-top: 20px;
+    
+}
+.social ul li a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.social ul li a i{
+    margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+   .box .Rox{
+    display: block;
+    margin: auto;
+   }
+   .contact_info{
+    display: none;
+   }
+}
+
+/*============Nav============*/
+.NavS{
+    width: 100%;
+    background: var(--bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+.navbar{
+    background: var(--bg-color) !important;
+}
+
+.NavS ul{
+    gap: 12px;
+}
+.NavS ul li a{
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.NavS ul a:hover{
+    color: var(--primary-color);
+    
+}
+.NavS ul a:hover li{
+    background: #000;
+    
+}
+.NavS ul a:focus{
+    color: var(--primary-color);
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+/*============Nav END============*/
+.banner{
+    width: 100%;
+    height: 100%;
+    background: url('asset/download.jpg') no-repeat center center ;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*============Banner============*/
+
+/*============Banner END============*/
+
+
+
+/* ============Services============ */
+
+
+
+
+
+/* ============Services END============ */
+
+
+/* ============WorkDone start============ */
+.workDone{
+    width: 100%;
+    height: 80%;
+    padding: 100px 0;
+    background-image: url('asset/images/clients/code-1-1280x766.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+    color: #fff;
+    background-attachment: fixed;
+
+
+    /* background: var(--mainBg-color); */
+}
+.overlay::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 57%;
+    height: 100%;
+    background-color: var(--mainBg-color);
+    opacity: .9;
+    z-index: -1;
+}
+
+
+
+
+/* ============WorkDone END============ */
+.sliderBox{
+    max-width: 1240px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider_wrap{
+        padding: 70px 0;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+}
+.swiper-wrapper{
+    transition-timing-function: linear;
+}
+.box_w .swiper-slide{
+    display: flex;
+    padding:15px;
+    width: auto;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    gap: 10px;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide img{
+    width: 150px;
+}
+
+.getintouch{
+    width: 100%;
+    background: var(--mainBg-color);
+}
+.getintouch h2{
+    color: white !important;
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 20px;
+}
+
+.flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+section{
+    overflow: hidden;
+}
+.work_section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 220px 0  ;
+    overflow: hidden;
+}
+.work_section h1{
+    color: var(--tittle-color);
+    font-size: 55px;
+    margin: 80px 0;
+}
+.work_section h1 .Swiper {
+    width: 80%;
+    height: 100%;
+  }
+
+  .Swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    box-shadow: 1px 9px 20px 8px rgb(0 0 0 / 9%);
+  }
+
+  .Swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent , #0002 , #0004);
+  }
+
+  /* ============WorkDone END============ */
+  
+
+  /* ============footer start============ */
+
+
+  .footer{
+    width: 100%;
+    height: 100%;
+    background: var(--mainBg-color);
+    color: white;
+    padding: 50px 0;
+  }
+  .footer  p{
+    margin: 20px 0;
+    color: rgba(232, 229, 229, 0.758);
+    transition: all .3s ease;
+  }
+.Social_box a{
+    padding:  5px 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0 10px;
+
+}
+
+.services_box i{
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.services_box p:hover i{
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.services_box p:hover {
+    color: rgb(255, 255, 255);
+}
+.links_box i{
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.links_box p:hover i{
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.links_box p:hover {
+    color: rgb(255, 255, 255);
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #251D5A;
+    padding: 15px 0;
+}
+ 
+  /* ============footer END============ */
+
+
+
+
+  /* ============ MAIN PAGE END HERE ============ */
+
+
+
+  /* ============ WHO WE ARE PAGE START HERE ============ */
+
+.whoweare{
+    width: 100%;
+    height: 100%;
+    background-image:url('https://avientech.com/wp-content/uploads/2023/10/6155286-1300x300.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: #fff;
+    padding: 100px 0;
+}
+
+
+/* ============  TECHNOLOGY MEADE START  HERE ============ */
+
+.technology h2{
+    color:rgb(44, 74, 107);
+}
+
+.technology {
+    text-align: justify;
+}
+
+.technology p{
+    color:rgba(1, 27, 53, 0.815);
+    font-size:  15.5px;
+}
+.social_who,.mail,.phone{
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+    border: 1px solid #2f266a4d;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+
+}
+.social_who,.mail,.phone i{
+    font-size: 25px;
+    color: var(--mainBg-color);
+    font-weight: 900;
+    cursor: pointer;
+}
+.social_who{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+/* ============  TECHNOLOGY MEADE END HERE ============ */
+/* ============ happyClient START============ */
+.happyClient{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 100px 0;
+    background-image: url('asset/images/clients/code-1-1280x766.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: -1;
+}
+
+.happyClient_box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.happyClient_box div p{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.happyClient_box div i{
+  color: rgb(255, 94, 0);
+  font-size: 40px;
+}
+.happyClient_box div h4{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+/* ============ happyClient END============ */
